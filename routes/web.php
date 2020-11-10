@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//GET
+
 Route::get('/', function () {
     return view('welcome');
+
 });
+
+Route::get('/register', function () {
+    return view('register');
+
+});
+
+//POST
+
+Route::post('/login', function () {
+    return view('login');
+
+});
+
+
+

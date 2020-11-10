@@ -150,7 +150,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Docker.docker-compose.yml.app: Compose Deployment">
@@ -186,7 +186,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604923437631</updated>
       <workItem from="1604923439680" duration="2754000" />
-      <workItem from="1604933229236" duration="738000" />
+      <workItem from="1604933229236" duration="7072000" />
     </task>
     <servers />
   </component>
@@ -198,9 +198,13 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="652" y="303" key="#Composer/0.23.1440.877@0.23.1440.877" timestamp="1604933277078" />
-    <state x="375" y="71" key="SettingsEditor" timestamp="1604933206068">
+    <state x="602" y="452" key="NewPhpFileDialog" timestamp="1605020598621">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="375" y="71" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1604933206068" />
+    <state x="602" y="452" key="NewPhpFileDialog/0.23.1440.877@0.23.1440.877" timestamp="1605020598621" />
+    <state x="375" y="71" key="SettingsEditor" timestamp="1605001840069">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="375" y="71" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1605001840069" />
   </component>
 </project>
