@@ -20,31 +20,116 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d8a8d41-0a97-4e5d-a94a-f2d894416ebb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_131314_create_memberships_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_131728_create_licenses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/UserRequests.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/adminer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/destroy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modify.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/aria_log.00000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/aria_log_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd/ib_buffer_pool.incomplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bdd/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/bdd/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/aria_log.00000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/aria_log_control" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/asso/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/ib_buffer_pool" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/ib_logfile0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/ibdata1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/multi-master.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/column_stats.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/column_stats.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/column_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/columns_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/columns_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/columns_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/db.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/db.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/db.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/db.opt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/event.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/event.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/event.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/func.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/func.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/func.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/general_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/general_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/general_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/global_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/global_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/global_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/gtid_slave_pos.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/gtid_slave_pos.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_category.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_category.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_category.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_keyword.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_keyword.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_keyword.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_relation.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_relation.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_relation.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_topic.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_topic.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/help_topic.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/index_stats.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/index_stats.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/index_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/innodb_index_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/innodb_index_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/innodb_table_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/innodb_table_stats.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/plugin.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/plugin.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/plugin.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/proc.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/proc.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/proc.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/procs_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/procs_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/procs_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/proxies_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/proxies_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/proxies_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/roles_mapping.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/roles_mapping.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/roles_mapping.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/servers.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/servers.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/servers.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/slow_log.CSM" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/slow_log.CSV" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/slow_log.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/table_stats.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/table_stats.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/table_stats.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/tables_priv.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/tables_priv.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/tables_priv.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_leap_second.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_leap_second.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_leap_second.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_name.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_name.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_name.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_transition.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_transition.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_transition.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_transition_type.MAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_transition_type.MAI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/time_zone_transition_type.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/transaction_registry.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/transaction_registry.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/mysql/user.frm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdd/performance_schema/db.opt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/debugbar/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/debugbar/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_131314_create_memberships_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_131314_create_memberships_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_131728_create_licenses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_131728_create_licenses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +288,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -215,6 +301,12 @@
       <updated>1605022771525</updated>
       <workItem from="1605022773369" duration="54000" />
       <workItem from="1605177790293" duration="7576000" />
+      <workItem from="1605253023303" duration="3821000" />
+      <workItem from="1605261637537" duration="110000" />
+      <workItem from="1605263378683" duration="534000" />
+      <workItem from="1605264004524" duration="488000" />
+      <workItem from="1605269077170" duration="1658000" />
+      <workItem from="1605458757583" duration="17292000" />
     </task>
     <servers />
   </component>
@@ -237,13 +329,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="515" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605192420489">
+    <state x="515" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605254492883">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="515" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1605192420489" />
-    <state x="537" y="193" width="670" height="676" key="search.everywhere.popup" timestamp="1605192004574">
+    <state x="515" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1605254492883" />
+    <state x="506" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605532395132">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="506" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1605532395132" />
+    <state x="718" y="457" key="NewPhpFileDialog" timestamp="1605522744912">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="718" y="457" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1605522744912" />
+    <state x="407" y="0" key="SettingsEditor" timestamp="1605531104086">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="407" y="0" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1605531104086" />
+    <state x="537" y="193" width="670" height="676" key="search.everywhere.popup" timestamp="1605263840033">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="537" y="193" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1605192004574" />
+    <state x="537" y="193" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1605263840033" />
   </component>
 </project>
