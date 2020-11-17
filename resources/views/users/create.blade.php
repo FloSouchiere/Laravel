@@ -7,6 +7,20 @@
                     <form class="form-horizontal" method="POST" action="{{ route('users.store') }}">
                         {{ csrf_field() }}
                         <div class="form-group">
+                            <div class="form-group">
+                                <label for="firstname" class="col-md-4 control-label">Prénom</label>
+                                <div class="col-md-6">
+                                    <input id="firstname" type="text" class="form-control" name="firstname" required
+                                           autofocus>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname" class="col-md-4 control-label">Nom</label>
+                                <div class="col-md-6">
+                                    <input id="lastname" type="text" class="form-control" name="lastname" required
+                                           autofocus>
+                                </div>
+                            </div>
                             <label for="email" class="col-md-4 control-label">E-Mail</label>
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" required>
@@ -19,23 +33,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="firstname" class="col-md-4 control-label">Prénom</label>
-                            <div class="col-md-6">
-                                <input id="firstname" type="text" class="form-control" name="firstname" required
-                                       autofocus>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastname" class="col-md-4 control-label">Nom</label>
-                            <div class="col-md-6">
-                                <input id="lastname" type="text" class="form-control" name="lastname" required
-                                       autofocus>
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label for="phone" class="col-md-4 control-label">Tél</label>
                             <div class="col-md-6">
-                                <input id="phone" type="number" class="form-control" name="phone" required>
+                                <input id="phone" type="text" class="form-control" name="phone" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <label for="zipcode" class="col-md-4 control-label">Code Postal</label>
                             <div class="col-md-6">
-                                <input id="zipcode" type="number" class="form-control" name="zipcode" required>
+                                <input id="zipcode" type="text" class="form-control" name="zipcode" required>
                             </div>
                         </div>
                         <div class="form-group">

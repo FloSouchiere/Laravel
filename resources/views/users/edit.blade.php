@@ -4,8 +4,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Modifier un utilisateur</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('users.update', $user->id) }}">
-                        {{ csrf_field() }}
+                    <form class="form-horizontal" method="POST" action="{{ route('users.update', $user) }}">
+                        @csrf
                         {{ method_field('PUT') }}
                         <div class="form-group">
                             <label for="email" class="col-md-4 control-label">E-Mail</label>
