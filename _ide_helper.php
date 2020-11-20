@@ -15871,6 +15871,16 @@
                         /** @var \Livewire\LivewireManager $instance */
                         return $instance->isOnVapor();
         }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function withQueryParams($queryParams)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->withQueryParams($queryParams);
+        }
          
     }
      

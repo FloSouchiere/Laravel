@@ -15,7 +15,7 @@ class UpdateRequest extends FormRequest
     {
         return [
             'firstname' => 'required|string',
-            'lastname' => 'required|string',
+            'name' => 'required|string',
             'email' => 'required|email|max:80',
             'password' => 'required|string',
             'phone' => 'nullable|string',

@@ -4,7 +4,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Modifier un utilisateur</div>
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('users.update', $user) }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('admin.users.update', $user) }}">
                         @csrf
                         {{ method_field('PUT') }}
                         <div class="form-group">

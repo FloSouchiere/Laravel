@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateMembershipsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('memberships', function (Blueprint $table) {
@@ -22,15 +17,12 @@ class CreateMembershipsTable extends Migration
             $table->decimal('price');
             $table->dateTime('date_start');
             $table->dateTime('date_end');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('license_id')->references('id')->on('licenses');
 
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('memberships');

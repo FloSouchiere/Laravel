@@ -20,16 +20,11 @@ class CreateLicensesTable extends Migration
             $table->decimal('price');
             $table->integer('duration');
             $table->enum('duration_type', ['month', 'year']);
-            $table->date('month_start');
             $table->date('day_start');
+            $table->date('month_start');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('licenses');
